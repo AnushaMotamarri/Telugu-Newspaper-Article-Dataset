@@ -4,7 +4,7 @@ import os
 def news():
       
       
-    for k in range(1000,1000000): 
+    for k in range(100000,500000): 
         
         url='http://www.andhrajyothy.com/artical?SID='+str(k)
         resp=requests.get(url)
@@ -29,25 +29,25 @@ def news():
             for subnews in l1.findAll("a",{"id":"ContentPlaceHolder1_alnk1"}):
                 p=subnews.text
                 if p=="జాతీయం":
-                    filename="td/"+str(year)+"/nation/1"+date+str(k)+".utf8"
+                    filename="telugudata/"+str(year)+"/nation/1"+date+str(k)+".utf8"
                 elif p=="నవ్య":
-                    filename="td/"+str(year)+"/navya/1"+date+str(k)+".utf8"
+                    filename="telugudata/"+str(year)+"/navya/1"+date+str(k)+".utf8"
                 elif p=="ఆంధ్రప్రదేశ్":
-                    filename="td/"+str(year)+"/andhrapradesh/1"+date+str(k)+".utf8"
+                    filename="telugudata/"+str(year)+"/andhrapradesh/1"+date+str(k)+".utf8"
                 elif p=="తెలంగాణ":
-                    filename="td/"+str(year)+"/telangana/1"+date+str(k)+".utf8"  
+                    filename="telugudata/"+str(year)+"/telangana/1"+date+str(k)+".utf8"  
                 elif p=="చిత్రజ్యోతి":
-                    filename="td/"+str(year)+"/entertainment/1"+date+str(k)+".utf8"
+                    filename="telugudata/"+str(year)+"/entertainment/1"+date+str(k)+".utf8"
                 elif p=="బిజినెస్‌":
-                    filename="td/"+str(year)+"/business/1"+date+str(k)+".utf8"
+                    filename="telugudata/"+str(year)+"/business/1"+date+str(k)+".utf8"
                 elif p=="ఎడిటోరియల్":
-                    filename="td/"+str(year)+"/editorial/1"+date+str(k)+".utf8"
+                    filename="telugudata/"+str(year)+"/editorial/1"+date+str(k)+".utf8"
                 elif p=="క్రీడాజ్యోతి":
-                    filename="td/"+str(year)+"/sports/1"+date+str(k)+".utf8"
+                    filename="telugudata/"+str(year)+"/sports/1"+date+str(k)+".utf8"
                 elif p=="తాజావార్తలు":
-                    filename="td/"+str(year)+"/freshnews/1"+date+str(k)+".utf8"
+                    filename="telugudata/"+str(year)+"/freshnews/1"+date+str(k)+".utf8"
                 elif p=="ప్రత్యేకం":
-                    filename="td/"+str(year)+"/special/1"+date+str(k)+".utf8"
+                    filename="telugudata/"+str(year)+"/special/1"+date+str(k)+".utf8"
             print(filename)
             l=soup.find("span",{"id":"ContentPlaceHolder1_lblStoryDetails"})
             if filename!='' and year!='':
