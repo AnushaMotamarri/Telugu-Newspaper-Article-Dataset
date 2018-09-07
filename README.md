@@ -5,6 +5,7 @@ This Project scrapes articles from archives of Telugu newspaper website Andhra J
 Complete Dataset can be downloaded from [here](https://drive.google.com/file/d/1IbqM335M7imzG-2ZV0d8-JbRqCnyAii3/view?usp=sharing) .
 
 ---
+**(OR)** if you choose to create dataset by yourself using the code , here you go.
 
 ## Requirements
 * Python3
@@ -20,3 +21,10 @@ pip3 install requests
 python3 scrapeTelugu.py
 ```
 You should now be seeing text files getting created in subfolders of the directory `telugudata`. 
+
+This Scraper is `website specific`. So, it does not work with other websites. 
+
+---
+
+## Other Links
+A similar work on Malayalam Dataset can be found [here](https://github.com/ABHISHEKVALSAN/Malayalam-Newspaper-Article-Dataset)
