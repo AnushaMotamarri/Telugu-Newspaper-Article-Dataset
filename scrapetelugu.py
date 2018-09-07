@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
  
 def news():
       
-    for k in range(28251,28252): 
+    for k in range(5000,28252): 
         url='http://www.andhrajyothy.com/artical?SID='+str(k)
         resp=requests.get(url)
         if resp.status_code==200:
