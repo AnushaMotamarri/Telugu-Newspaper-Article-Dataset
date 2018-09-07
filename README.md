@@ -15,6 +15,8 @@ Complete Dataset can be downloaded from [here](https://drive.google.com/file/d/1
 ## Execution Steps
 Open the terminal and change current working directory to the location where you want the dataset to be stored.
 ```
+git clone https://github.com/AnushaMotamarri/Telugu-Newspaper-Article-Dataset
+cd Telugu-Newspaper-Article-Dataset
 python makedirs.py 
 pip3 install bs4
 pip3 install requests
