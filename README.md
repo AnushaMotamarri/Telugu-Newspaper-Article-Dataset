@@ -13,7 +13,7 @@ Complete Dataset can be downloaded from [here](https://drive.google.com/file/d/1
 * Telugu Language should be enabled in Language settings of your machine,to be able to see telugu text.
 
 ## Execution Steps
-Open the terminal and change current working directory to the location where you want the dataset to be stored.
+Open the terminal and change current working directory to the location where you want to clone the project.
 ```
 git clone https://github.com/AnushaMotamarri/Telugu-Newspaper-Article-Dataset
 cd Telugu-Newspaper-Article-Dataset
